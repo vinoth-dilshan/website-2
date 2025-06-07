@@ -1,0 +1,357 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+}
+
+nav {
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #233e50;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+    font-size: 18px;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.login {
+    border: none;
+    font-size: 18px;
+    padding: 8px 25px;
+    border-radius: 25px;
+    color: #233e50;
+    background-color: #65e4a3;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login:hover {
+    background-color: #4bcb8a;
+}
+
+/* About Us Section */
+.about {
+    background-color: rgb(29, 47, 58);
+    color: #fff;
+    min-height: 500px;
+    padding: 4rem 8rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.about h1 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    opacity: 0.8;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+/* Hero Image Gallery */
+.grid-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 1.5rem;
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+    margin: -100px auto 0;
+    z-index: 10;
+}
+
+.grid-items img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.grid-items > :nth-child(2) {
+    grid-row: span 2;
+}
+
+.hero-img {
+    padding-bottom: 100px;
+}
+
+/* Our Story Section */
+.ossection {
+    padding: 6rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ossection h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.ossection p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    opacity: 0.9;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+button {
+    padding: 15px 40px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    background-color: #65e4a3;
+    color: #233e50;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(101, 228, 163, 0.4);
+}
+
+.btn-2 {
+    background-color: #fff;
+    border: 2px solid #233e50;
+    color: #233e50;
+}
+
+.btn-2:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Our Numbers Section */
+.ournumbers {
+    padding: 6rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #082b42;
+    color: #fff;
+    gap: 2rem;
+}
+
+.ournumbers h1 {
+    font-size: 2.5rem;
+    max-width: 800px;
+}
+
+.ournumbers p {
+    max-width: 800px;
+    opacity: 0.8;
+    line-height: 1.8;
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin-top: 3rem;
+}
+
+.datachild {
+    min-width: 150px;
+}
+
+.gr {
+    color: #65e4a3;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Leadership Team Section */
+.team {
+    padding: 6rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team h1 {
+    font-size: 2.5rem;
+}
+
+.team p {
+    max-width: 800px;
+    line-height: 1.8;
+}
+
+.imgsection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.img-data {
+    text-align: center;
+    max-width: 250px;
+}
+
+.img-data img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    border: 5px solid #65e4a3;
+}
+
+/* Team Showcase Section */
+.team-img {
+    padding: 6rem 5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #082b42;
+    color: white;
+    gap: 2rem;
+}
+
+.team-img h1 {
+    font-size: 2.5rem;
+}
+
+.team-img p {
+    max-width: 800px;
+    opacity: 0.8;
+    line-height: 1.8;
+}
+
+.cart-conteinner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1000px;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    background-color: #233e50;
+    padding: 3rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-data h2 {
+    margin-bottom: 1rem;
+    color: #65e4a3;
+}
+
+.card-data p {
+    line-height: 1.8;
+}
+
+/* Footer Section */
+footer {
+    display: flex;
+    flex-direction: row;
+    padding: 4rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem;
+    background-color: #f8f9fa;
+    color: #233e50;
+}
+
+.footer-data-left {
+    width: 100%;
+    max-width: 350px;
+}
+
+.footer-data-right {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.footer-data {
+    min-width: 150px;
+}
+
+.footer-data h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.footer-data p {
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.footer-data p:hover {
+    color: #65e4a3;
+}
+
+.para {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
